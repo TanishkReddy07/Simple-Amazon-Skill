@@ -1,0 +1,89 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "weather",
+          "slots": [
+            {
+              "name": "Tempature",
+              "type": "AMAZON.WeatherCondition",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "how cold is it today",
+            "how is the weather",
+            "Show me weather statistics"
+          ]
+        },
+        {
+          "name": "Greeting",
+          "slots": [
+            {
+              "name": "Response",
+              "type": "Greetings",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "good afternoon",
+            "good morning",
+            "hello"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Hello my friend! How is your day?"
+              }
+            }
+          ],
+          "name": "Greetings"
+        }
+      ]
+    }
+  },
+  "version": "7"
+}
